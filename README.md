@@ -63,14 +63,16 @@ pip install -r requirements.txt
    ```
 
 ## Usage
-1. **Navigate to the src/ directory:**
+1. **Navigate to the `src/` directory:**
     ```bash
     cd src
     ```
+
 2. **Run the script:**
     ```bash
     python main.py
     ```
+
 3. **Check the output:**
-    - A file named employee_ids.pdf will be generated in src/.
+    - A file named `employee_ids.pdf` will be generated in `src/`.
     - Each page contains one ID card with the template, employee photo, name, and title.
