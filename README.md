@@ -4,7 +4,6 @@ This project generates a single PDF file containing employee ID cards, with one 
 
 ## Table of Contents
 - [Features](#features)
-- [File Structure](#file-structure)
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Usage](#usage)
@@ -21,20 +20,6 @@ This project generates a single PDF file containing employee ID cards, with one 
 - Title is positioned at (1.7 inches x, 0.6 inches from bottom) with an 8-point font.
 - Photo is positioned at (0.37 inches x, 0.33 inches from top) with a 1x1 inch size.
 
-## File Structure
-employee_id_generator/
-├── src/
-│   ├── main.py              # Python script to generate the PDF
-│   ├── ute_id_template.png  # ID template image
-│   ├── employees.csv        # CSV file with employee data
-│   └── photos/              # Directory containing employee photos
-│       ├── employee1.jpg
-│       ├── employee2.jpg
-│       └── ...
-├── README.md                # Project documentation
-├── requirements.txt         # Python dependencies
-└── .gitignore               # Git ignore file
-
 ## Requirements
 - **Python**: Version 3.8 or higher
 - **Libraries**:
@@ -48,3 +33,29 @@ employee_id_generator/
 Install dependencies via:
 ```bash
 pip install -r requirements.txt
+
+## Setup
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/employee_id_generator.git
+   cd employee_id_generator
+
+2. **Set Up a Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+4. **Prepare Input Files**
+   - Place `ute_id_template.png` in `src/`.
+   - Place employee photos (e.g., `employee1.jpg`, `employee2.jpg`) in `src/photos/`.
+   - Create or update `src/employees.csv` with the following format:
+   ```csv
+   name,title,photo_path
+   John,Software Engineer,employee1.jpg
+   Siri,Project Manager,employee2.jpg
+   Alice,Software Engineer,employee3.jpg
+   Mary,Project Manager,employee4.jpg
