@@ -7,9 +7,6 @@ This project generates a single PDF file containing employee ID cards, with one 
 - [Requirements](#requirements)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Input File Details](#input-file-details)
-- [Troubleshooting](#troubleshooting)
-- [Notes](#notes)
 
 ## Features
 - Generates a PDF with one employee ID per page.
@@ -33,21 +30,25 @@ This project generates a single PDF file containing employee ID cards, with one 
 Install dependencies via:
 ```bash
 pip install -r requirements.txt
+```
 
 ## Setup
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/employee_id_generator.git
    cd employee_id_generator
+   ```
 
 2. **Set Up a Virtual Environment**
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
 3. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
+   ```
 
 4. **Prepare Input Files**
    - Place `ute_id_template.png` in `src/`.
@@ -59,3 +60,17 @@ pip install -r requirements.txt
    Siri,Project Manager,employee2.jpg
    Alice,Software Engineer,employee3.jpg
    Mary,Project Manager,employee4.jpg
+   ```
+
+## Usage
+1. **Navigate to the src/ directory:**
+    ```bash
+    cd src
+    ```
+2. **Run the script:**
+    ```bash
+    python main.py
+    ```
+3. **Check the output:**
+    - A file named employee_ids.pdf will be generated in src/.
+    - Each page contains one ID card with the template, employee photo, name, and title.
