@@ -1,8 +1,0 @@
-2025-06-12 19:20:17,945 - INFO - Resizing template image from (1011, 639) to (1013, 638)
-2025-06-12 19:20:18,004 - INFO - Saved resized template: resized_ute_id_template.png
-2025-06-12 19:20:18,005 - INFO - CSV Headers: ['name', 'title', 'photo_path']
-2025-06-12 19:20:18,005 - INFO - Processing ID for John with photo: passportPhotos\employee1.jpg
-2025-06-12 19:20:18,163 - INFO - Processing ID for Siri with photo: passportPhotos\employee2.jpg
-2025-06-12 19:20:18,215 - INFO - Processing ID for Alice with photo: passportPhotos\employee3.jpg
-2025-06-12 19:20:18,285 - INFO - Processing ID for Mary with photo: passportPhotos\employee4.jpg
-2025-06-12 19:20:18,404 - INFO - PDF generated: employee_id_cards.pdf
