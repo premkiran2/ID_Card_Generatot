@@ -24,8 +24,8 @@ This project generates a single PDF file containing employee ID cards, with one 
   - `pillow`: For image processing
 - **Input Files**:
   - `ute_id_template.png`: ID template image (1013x638 pixels for 3.375x2.125 inches at 300 DPI)
-  - `employees.csv`: CSV file with columns `name`, `title`, `photo_path`
-  - Employee photos in `src/photos/` (e.g., `employee1.jpg`, `employee2.jpg`)
+  - `employeesMetaData.csv`: CSV file with columns `name`, `title`, `photo_path`
+  - Employee photos in `src/passportPhotos/` (e.g., `employee1.jpg`, `employee2.jpg`)
 
 Install dependencies via:
 ```bash
@@ -52,8 +52,8 @@ pip install -r requirements.txt
 
 4. **Prepare Input Files**
    - Place `ute_id_template.png` in `src/`.
-   - Place employee photos (e.g., `employee1.jpg`, `employee2.jpg`) in `src/photos/`.
-   - Create or update `src/employees.csv` with the following format:
+   - Place employee photos (e.g., `employee1.jpg`, `employee2.jpg`) in `src/passportPhotos/`.
+   - Create or update `src/employeesMetaData.csv` with the following format:
    ```csv
    name,title,photo_path
    John,Software Engineer,employee1.jpg
@@ -74,5 +74,5 @@ pip install -r requirements.txt
     ```
 
 3. **Check the output:**
-    - A file named `employee_ids.pdf` will be generated in `src/`.
+    - A file named `employee_id_cards.pdf` will be generated in `src/`.
     - Each page contains one ID card with the template, employee photo, name, and title.
